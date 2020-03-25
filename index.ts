@@ -24,7 +24,9 @@ export function getVendorRelativePath(prefix: string = ''): string {
   return `${prefix}/${file_name}`
 }
 
-export const DllReferencePluginOptions = {
-  context: Context,
-  manifest: getManifestPath()
+export function createDllReferencePluginOptions(context: string) {
+  return {
+    context,
+    manifest: getManifestPath()
+  }
 }
