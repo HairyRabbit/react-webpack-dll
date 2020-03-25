@@ -1,6 +1,5 @@
 import path from 'path'
 import { name } from './package.json'
-import webpack from 'webpack'
 
 export const Context = __dirname
 export const GlobalName = '__VENDOR__'
